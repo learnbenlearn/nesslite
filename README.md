@@ -32,3 +32,5 @@ ffmpeg -r 60 -f image2 -s 1920x1080 -i first\_1k\_snapshots/snapshot\_%04d.png -
 
 **Movie Example**  
 Below is an example of a short movie from this nesslite simulation.
+
+![](nesslite_first_1k.gif)
