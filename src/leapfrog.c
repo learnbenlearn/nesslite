@@ -59,15 +59,9 @@ void yvelocityLF(int index){
         if(i != index){
             r_3 = calculateR(i, index);
             F += solarSystemObjects[i].mass * (solarSystemObjects[i].yposition_n - solarSystemObjects[index].yposition_n) / (r_3 + epsilon_cubed);
-            /*if(index == 4){
-                printf("%lf\n", (solarSystemObjects[i].mass * (solarSystemObjects[index].yposition_n - solarSystemObjects[i].yposition_n) / (r_3 + epsilon_cubed)));
-            }*/
         }
     }
     solarSystemObjects[index].yvelocity_newhalf = solarSystemObjects[index].yvelocity_oldhalf + G * F * h;
-    /*if(index == 4){
-        printf("\n old y velocity: %lf \n G * F * h: %lf \n new y velocity: %lf\n", solarSystemObjects[index].yvelocity_oldhalf, (G * F * h), solarSystemObjects[index].yvelocity_newhalf);
-    }*/
 }
 void zvelocityLF(int index){
     double F = 0;

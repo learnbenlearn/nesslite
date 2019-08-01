@@ -19,7 +19,7 @@ mass_array = [330317.8, 95.2, 14.5, 17.2, 0.002, 0.0001073, 0.00007334,
               0.0002930, 0.002780, 0.3]
 G = 0.000118426
 
-infile = open("snapshot_first_1k", "r")
+infile = open("../output/snapshot_first_1k", "r")
 data = infile.read()
 line_list = data.splitlines()
 infile.close()
@@ -87,7 +87,7 @@ for i in range(15):
     initial_y_angular_momentum += (z_array[i] * x_velocity_array[i] - x_array[i] * z_velocity_array[i]) * mass_array[i]
     initial_z_angular_momentum += (x_array[i] * y_velocity_array[i] - y_array[i] * x_velocity_array[i]) * mass_array[i]
 
-infile = open("snapshot_last_1k", "r")
+infile = open("../output/snapshot_last_1k", "r")
 data = infile.read()
 line_list = data.splitlines()
 infile.close()

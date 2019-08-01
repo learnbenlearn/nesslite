@@ -15,8 +15,8 @@ int main(){
     int i, j;
     
     /* snapshot output file */
-    char snapshot_file_1[18] = "snapshot_first_1k";
-    char snapshot_file_2[17] = "snapshot_last_1k";
+    char snapshot_file_1[28] = "../output/snapshot_first_1k";
+    char snapshot_file_2[27] = "../output/snapshot_last_1k";
     FILE *fp;
     FILE *gp;
     

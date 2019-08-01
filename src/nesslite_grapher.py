@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
@@ -7,7 +8,7 @@ Created on Thu May  2 11:56:05 2019
 """
 import matplotlib.pyplot as plt
 
-infile = open("snapshot_first_1k", "r")
+infile = open("../output/snapshot_first_1k", "r")
 data = infile.read()
 line_list = data.splitlines()
 infile.close()
@@ -50,22 +51,23 @@ for j in range(1000):
              (y_array[14][j] - y_array[0][j]), 'g.')
     plt.xlim(-2e2, 2e2)
     plt.ylim(-2e2, 2e2)
+    plt.text(1e2, -2e2, "Time: %.2f yrs" % (2.94 * j))
     plt.axis('off')
     fig = plt.gcf()
     if(j < 10):
-        fig.savefig('%s/snapshot_000%d.png' % ("first_1k_snapshots", j))
+        fig.savefig('%s/snapshot_000%d.png' % ("../output/first_1k_snapshots", j), dpi=200)
     elif(j < 100):
-        fig.savefig('%s/snapshot_00%d.png' % ("first_1k_snapshots", j))
+        fig.savefig('%s/snapshot_00%d.png' % ("../output/first_1k_snapshots", j), dpi=200)
     elif(j < 1000):
-        fig.savefig('%s/snapshot_0%d.png' % ("first_1k_snapshots", j))
+        fig.savefig('%s/snapshot_0%d.png' % ("../output/first_1k_snapshots", j), dpi=200)
     else:
-        fig.savefig('%s/snapshot_%d.png' % ("first_1k_snapshots", j))
+        fig.savefig('%s/snapshot_%d.png' % ("../output/first_1k_snapshots", j), dpi=200)
     plt.clf()
 
     x_graph = []
     y_graph = []
-    
-infile = open("snapshot_last_1k", "r")
+  
+infile = open("../output/snapshot_last_1k", "r")
 data = infile.read()
 line_list = data.splitlines()
 infile.close()
@@ -108,17 +110,19 @@ for j in range(1000):
              (y_array[14][j] - y_array[0][j]), 'g.')
     plt.xlim(-2e2, 2e2)
     plt.ylim(-2e2, 2e2)
+    plt.text(1e2, -2e2, "Time: %.2f yrs" % (9997060 + 2.94 * j))
     plt.axis('off')
     fig = plt.gcf()
     if(j < 10):
-        fig.savefig('%s/snapshot_000%d.png' % ("last_1k_snapshots", j))
+        fig.savefig('%s/snapshot_000%d.png' % ("../output/last_1k_snapshots", j), dpi=200)
     elif(j < 100):
-        fig.savefig('%s/snapshot_00%d.png' % ("last_1k_snapshots", j))
+        fig.savefig('%s/snapshot_00%d.png' % ("../output/last_1k_snapshots", j), dpi=200)
     elif(j < 1000):
-        fig.savefig('%s/snapshot_0%d.png' % ("last_1k_snapshots", j))
+        fig.savefig('%s/snapshot_0%d.png' % ("../output/last_1k_snapshots", j), dpi=200)
     else:
-        fig.savefig('%s/snapshot_%d.png' % ("last_1k_snapshots", j))
+        fig.savefig('%s/snapshot_%d.png' % ("../output/last_1k_snapshots", j), dpi=200)
     plt.clf()
 
     x_graph = []
     y_graph = []
+"""
