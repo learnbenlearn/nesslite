@@ -8,7 +8,7 @@ nesslite: $(HEADERS)
 clean:
 	-rm -f ../build/nesslite
 
-clean output:
+clean_output:
 	-rm -f ../output/snapshot_first_1k
 	-rm -f ../output/snapshot_last_1k
 	-rm -f ../output/first_1k_snapshots/*
