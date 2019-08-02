@@ -5,8 +5,7 @@ default: nesslite
 nesslite: $(HEADERS)
 	mkdir ../build
 	mkdir ../output
-	mkdir ../output/first_1k_snapshots/
-	mkdir ../output/last_1k_snapshots/
+	mkdir ../output/snapshots/
 	gcc leapfrog.c particle_struct.c nesslite.c -o ../build/nesslite
 
 clean:

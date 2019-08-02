@@ -125,4 +125,3 @@ for j in range(1000):
 
     x_graph = []
     y_graph = []
-"""
