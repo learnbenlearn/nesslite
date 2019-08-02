@@ -8,7 +8,7 @@
 
 [ ] fix angular momentum and (to a much lesser extent) energy conservation
 
--
+----------------------------------------------------------------------------
 
 way down the line:
 
