@@ -16,19 +16,17 @@ make
 ./nesslite (must be in build directory)
 
 Files for analyzing nesslite simulations:  
-src/nesslite\_grapher.py *(produces snapshots of the first and last 1,000 timesteps of the simulation in output/first_1k_snapshots/ and output/last_1k_snapshots/, respectively)*  
-src/nesslite\_conservation.py *(calculates initial, final, and fractional difference for total energy and angular momentum in the x, y, and z directions for the simulation)*
+src/plotter.py *(produces pictures of every 1,000 timesteps of the simulation in output/snapshots/)*  
+src/conservation.py *(calculates initial, final, and fractional difference for total energy and total angular momentum for the simulation)*
 
 Run by:  
-python3.6 nesslite\_grapher.py *Note: must have matplotlib installed.*  
-python3.6 nesslite\_conservation.py
+python3.6 plotter.py *Note: must have matplotlib installed.*  
+python3.6 conservation.py
 
 Commands to make videos of nesslite simulation screenshots:  
-ffmpeg -r 60 -f image2 -s 1920x1080 -i last\_1k\_snapshots/snapshot\_%04d.png -pix\_fmt yuv420p last\_1k.mp4
+ffmpeg -r 60 -f image2 -s 1920x1080 -i snapshots/snapshot\_%04d.png -pix\_fmt yuv420p simulation.mp4
 
-ffmpeg -r 60 -f image2 -s 1920x1080 -i first\_1k\_snapshots/snapshot\_%04d.png -pix\_fmt yuv420p first\_1k.mp4
-
-*Note: Must have ffmpeg installed; command should be run in output directory.*
+*Note: Must have ffmpeg installed; command given is to be run in output directory.*
 
 **Movie Example**  
 Below is an example of a short movie from this nesslite simulation.
