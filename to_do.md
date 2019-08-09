@@ -1,10 +1,10 @@
 **To Do List:**  
 - [ ] standardize snapshots  
-- output to snapshot file every 1,000 timesteps  
+- output to snapshot file every 1,000 timesteps?
 
-- [ ] look into cleaning up repetitive output code in nesslite.c
+- [ x] look into cleaning up repetitive output code in nesslite.c
 
-- [ ] clean up repetitive code in python output files
+- [ x] clean up repetitive code in python output files
 
 - [ ] fix angular momentum and (to a much lesser extent) energy conservation
 
