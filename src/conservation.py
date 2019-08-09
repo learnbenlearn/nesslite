@@ -1,15 +1,5 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
 Created on Fri May  3 14:42:04 2019
-
-@author: Ben
-"""
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu May  2 11:56:05 2019
 
 @author: Ben
 """

@@ -21,9 +21,6 @@ int main(){
     char snapshot_file_4[27] = "../output/snapshotfile_004";
     int current_snapshot = 0;
     FILE *fp;
-    //FILE *gp;
-    //FILE *hp;
-    //FILE *jp;
     
     /* running for 10 million years with timestep of 2.94 years -> 3,401,360 time steps */
     for(i=0; i<3401360; i++){ //840337
@@ -76,6 +73,7 @@ int main(){
             solarSystemObjects[j].zvelocity_oldhalf = solarSystemObjects[j].zvelocity_newhalf;
         }
         
+        /* print timestep updates */
         if(i % 100000 == 0){
             printf("Timestep: %d\n", i);
         }
