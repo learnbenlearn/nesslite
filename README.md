@@ -29,6 +29,6 @@ ffmpeg -r 60 -f image2 -s 1920x1080 -i snapshots/snapshot\_%04d.png -pix\_fmt yu
 *Note: Must have ffmpeg installed; command given is to be run in output directory.*
 
 **Movie Example**  
-Below is an example of a short movie from this nesslite simulation.
+An example of a short movie from a nesslite simulation is shown below.
 
 ![](nesslite_first_1k.gif)
