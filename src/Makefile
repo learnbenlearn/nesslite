@@ -13,3 +13,7 @@ clean:
 
 clean_output:
 	-rm -r ../output/
+
+output: 
+	mkdir ../output/
+	mkdir ../output/snapshots/
