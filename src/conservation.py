@@ -3,6 +3,7 @@ Created on Fri May  3 14:42:04 2019
 
 @author: Ben
 """
+import numpy as np
 
 # global constants for mass of each variable and gravitational constant
 mass_array = [330317.8, 95.2, 14.5, 17.2, 0.002, 0.0001073, 0.00007334, 
@@ -18,23 +19,17 @@ def conservation(filename, firstlast):
     infile.close()
     
     # arrays for calculations
-    x_array = []
-    y_array = []
-    z_array = []
+    x_array = np.zeros(15)
+    y_array = np.zeros(15)
+    z_array = np.zeros(15)
     name_array = []
-    x_velocity_array = []
-    y_velocity_array = []
-    z_velocity_array = []
+    x_velocity_array = np.zeros(15)
+    y_velocity_array = np.zeros(15)
+    z_velocity_array = np.zeros(15)
     
-    # populate arrays with placeholders
+    # populate name array with placeholders
     for i in range(15):
-        x_array.append(0)
-        y_array.append(0)
-        z_array.append(0)
         name_array.append('')
-        x_velocity_array.append(0)
-        y_velocity_array.append(0)
-        z_velocity_array.append(0)
 
     # if firstlast = 0, we're calculating initial values, start from the top
     # of the first snapshot file
@@ -55,9 +50,9 @@ def conservation(filename, firstlast):
         z_velocity_array[i] = float(templist[6])
 
     # calculate velocity values    
-    velocity_array = []
+    velocity_array = np.zeros(15)
     for i in range(15):
-        velocity_array.append(x_velocity_array[i]**2 + y_velocity_array[i]**2 
+        velocity_array[i] = (x_velocity_array[i]**2 + y_velocity_array[i]**2 
                               + z_velocity_array[i]**2)
     
     # total potential energy calculation
