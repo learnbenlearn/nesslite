@@ -17,9 +17,9 @@ make
 
 Files for analyzing nesslite simulations:  
 src/plotter.py *(produces pictures of every 1,000 timesteps of the simulation in output/snapshots/)*  
-src/conservation.py *(calculates initial, final, and fractional difference for total energy and total angular momentum for the simulation)*
-src/np_plotter.py *(same as plotter.py but with numpy usage)*
-src/np_conservation.py *(same as conservation.py but with numpy usage)*
+src/conservation.py *(calculates initial, final, and fractional difference for total energy and total angular momentum for the simulation)*  
+src/np_plotter.py *(same as plotter.py but with numpy usage)*  
+src/np_conservation.py *(same as conservation.py but with numpy usage)*  
 
 Run by:  
 python3.6 plotter.py *Note: must have matplotlib installed.*  
