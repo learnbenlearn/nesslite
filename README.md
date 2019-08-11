@@ -23,9 +23,9 @@ src/np_conservation.py *(same as conservation.py but with numpy usage)*
 
 Run by:  
 python3.6 plotter.py *Note: must have matplotlib installed.*  
-python3.6 conservation.py
-python3.6 np_plotter.py *Note: must have numpy and matplotlib installed.*
-python3.6 np_conservation.py *Note: must have numpy installed.*
+python3.6 conservation.py  
+python3.6 np_plotter.py *Note: must have numpy and matplotlib installed.*  
+python3.6 np_conservation.py *Note: must have numpy installed.*  
 
 Commands to make videos of nesslite simulation screenshots:  
 ffmpeg -r 60 -f image2 -s 1920x1080 -i snapshots/snapshot\_%04d.png -pix\_fmt yuv420p simulation.mp4
